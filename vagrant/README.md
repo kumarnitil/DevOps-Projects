@@ -1,3 +1,5 @@
+![alt text](https://github.com/kumarnitil/DevOps-Projects/blob/46b01bf8722794b824d34102c3bc05c152ec6810/Vagrant-Architechture.JPG)
+
 Installing Vagrant
 Vagrant is a VM Automation Tool
 With Vagrant there are no OS Installations
