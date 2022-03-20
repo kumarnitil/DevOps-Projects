@@ -30,5 +30,18 @@
 * touch file{1..10}.txt - will create file from file1 to file10.txt
 * cp -r dir1 /dir2/ - cp -r is used to copy directories, only cp will not work\
 * mv command will move directory as well, adding options is not mandatory
+* mv command is also used to rename files and directory
+* rm -r to remove a directory and rm -r * will remove everything from your current directory
+
+# VIM Editor
+* Vi stands for Visual. It is a text editor that is an early attempt to a visual text editor.
+* Vim stands for Vi IMproved. It is an implementation of the Vi standard with many additions. It is the most commonly used implementation of the standard. Most Linux distributions come with Vim already installed.
+* VIM Editor is not there by default in CentoOS and you will have to install it. It will have vi but now vim.
+* While I takes you to Insert mode hitting O will also take to insert mode but will take you the next line from where you can make the change.
+* anaconda-ks.cfg will have information of all the option you choose while installing the OS and is located in the home directory of root.
+
+
+
+
 
 
