@@ -66,6 +66,34 @@
 * grep -iR firewall * - When we use -R with that then it will not only look into the files of the current directory but also the files in the directories present in the current directory. Similary this is also a command grep -R SELINUX /etc/*
 * grep also has something which is oppossite of search which is also called as reverse search - grep -v which means show everything apart from the keywords mentioned in the command
 
+# less, more, head, tail, cut and awk
+* less is a reader command which opens like vi but is only a reader
+* In less you can up and down arrow to scroll, use / to search the keyword and use q to quit.
+* more is also a reader but shows the file as percentage and also you only use Enter to scroll through the contents
+* head by default will show the first 10 lines and -n will make it show what lines you mentioned.
+* tail by default will show the last 10 lines and -n will make it show what lines you mentioned.
+* How to read the log file dynamically - tail -f will show you the dynamic contents of a file. CTRL + C to quit here. This command is very useful and should be used for 
+troubleshooting.
+* Logs of the system are located in /var/log. System log file is messages which is located here.
+* cat /etc/passwd this file contains all the user information where all the information is segregated by colons and first coloumn is the user name
+  * If we have proper separators like colons : then we can use cut command
+  * cut -d: -f1 /etc/passwd, cut -d: -f3 /etc/passwd,cut -d: -f4 /etc/passwd - where -d: is the delimeter and f1 is the colon name
+  * But if we do not have separators like colon then we have an intelligent search command called as awk
+  * awk -F':' '{print $1}' /etc/passwd - here the :F is being used as the delimeter.
+
+# Search and Replace in Files
+* Using Vim Editor
+  * There are a couple of ways vim editor will help here.
+  * vim file name - enter the extension mode using ESC -  :%s/text to search/text to replace  - Now this has a limitation and pay attention to the next few lines. If the same text is occuring at multiple places then it will replace the first occurence of the text and move on the next line. The solution is in the next line
+  * vim file name - enter the extension mode using ESC -  %s/text to search/text to replace/g - then this will replace the text globally.
+  * One more trick when we want to replace the word with nothing or in short remove the word - :%s/text to remove//g
+* The same thing can be done by the sed command
+  * sed is particulary useful when replacing in multiple files
+  * sed 's/coronavirus/covid19/g' samplefile.txt - will only show the replacement but will not actually replace the file.
+  * sed -i 's/coronavirus/covid19/g' samplefile.txt using -i will actually do the replacement.
+  * Multiple file replacement can be done using *.txt in the file name
+  * sed -i 's/coronavirus//g' samplefile.txt - to remove the word coronavirus from the file
+
 
 
 
