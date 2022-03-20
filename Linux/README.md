@@ -32,6 +32,7 @@
 * mv command will move directory as well, adding options is not mandatory
 * mv command is also used to rename files and directory
 * rm -r to remove a directory and rm -r * will remove everything from your current directory
+* mkdir -p - this command will let you create a series of directories inside one another but only mkdir will fail.
 
 # VIM Editor
 * Vi stands for Visual. It is a text editor that is an early attempt to a visual text editor.
@@ -39,6 +40,21 @@
 * VIM Editor is not there by default in CentoOS and you will have to install it. It will have vi but now vim.
 * While I takes you to Insert mode hitting O will also take to insert mode but will take you the next line from where you can make the change.
 * anaconda-ks.cfg will have information of all the option you choose while installing the OS and is located in the home directory of root.
+* Once in extended mode of the file then hit :se nu - this will display the entire files with line numbers
+* dd is not only to delete the lines but it also works as cut paste, yyp is copy paste and ddp is cut paste
+
+# File System
+* A file in Linux can be a text file or a binary file. Use the file command to know. file <file-name>
+* file pwd when in bin directory would show it is a binary file
+* C means it is a character files linked to the character like keyboard is a character- go to directory cd /dev - this is where you find device files
+* b means block files - you will find it againsts sda which is our hardisk here.
+* l is for link like the shortcuts which we have - like the Desktop shortcuts
+  * We will do this when we work on a file location of which is very deep down in the directories
+  * to create a link we give ln -s <absolute path of the file> <link Name>
+  * to delete the link simply use rm command or we can also use unlink command
+* ls -l - display the files sorted in alphabetical order
+* ls -lt - displays the files sorted as per the time stamp
+* ls -ltr - will reverse the sorted order- which will show latest file at the end
 
 
 
