@@ -44,17 +44,27 @@
 * dd is not only to delete the lines but it also works as cut paste, yyp is copy paste and ddp is cut paste
 
 # File System
-* A file in Linux can be a text file or a binary file. Use the file command to know. file <file-name>
+* A file in Linux can be a text file or a binary file. Use the file command to know. file (file-name)
 * file pwd when in bin directory would show it is a binary file
 * C means it is a character files linked to the character like keyboard is a character- go to directory cd /dev - this is where you find device files
 * b means block files - you will find it againsts sda which is our hardisk here.
 * l is for link like the shortcuts which we have - like the Desktop shortcuts
   * We will do this when we work on a file location of which is very deep down in the directories
-  * to create a link we give ln -s <absolute path of the file> <link Name>
+  * to create a link we give ln -s (absolute path of the file) (link Name)
   * to delete the link simply use rm command or we can also use unlink command
 * ls -l - display the files sorted in alphabetical order
 * ls -lt - displays the files sorted as per the time stamp
 * ls -ltr - will reverse the sorted order- which will show latest file at the end
+* To change the hostname of your machine you need to change the hostname in  /etc/hostname file and then comeout and run the hostname (updated hostname) command
+
+# GREP
+* grep command will help find a keyword in a file or a group of files and will return the line whereever the word occurs in the file and will show file path if multiple hits.
+* grep keyword filename - is the format
+* grep -i keyword filename - by giving -i we ignore the case senstivity in the keywords
+* grep -i firewall < anaconda-ks.cfg here. - < is the input redirection symbol which is included by  default.
+* grep -i firewall * - will look for the keyword firewall in all the files in the current directory.
+* grep -iR firewall * - When we use -R with that then it will not only look into the files of the current directory but also the files in the directories present in the current directory. Similary this is also a command grep -R SELINUX /etc/*
+* grep also has something which is oppossite of search which is also called as reverse search - grep -v which means show everything apart from the keywords mentioned in the command
 
 
 
