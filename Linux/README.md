@@ -17,3 +17,18 @@
 * /var - Server Data like if running web server then that data can be found here.
 
 # Some different Linux Commands
+* The general format of the command is  (command   options    arguments) - ex -> ls -l /tmp/
+* command --help to know all the options since it is not possible to memorize all commands
+* cat /etc/os-release - will tell you which OS you are working on\
+* sudo -i - switch to root user
+* whoami - the user you are
+* cat /etc/hostname - to get the host name
+* /proc - will contain all the system related information
+* uptime is a command which will tell you how long has your system been running
+* free -m is a command which will show you the ram size.
+* touch not only creates an empty file it also updates files time stamps.
+* touch file{1..10}.txt - will create file from file1 to file10.txt
+* cp -r dir1 /dir2/ - cp -r is used to copy directories, only cp will not work\
+* mv command will move directory as well, adding options is not mandatory
+
+
