@@ -92,7 +92,17 @@ troubleshooting.
   * sed 's/coronavirus/covid19/g' samplefile.txt - will only show the replacement but will not actually replace the file.
   * sed -i 's/coronavirus/covid19/g' samplefile.txt using -i will actually do the replacement.
   * Multiple file replacement can be done using *.txt in the file name
-  * sed -i 's/coronavirus//g' samplefile.txt - to remove the word coronavirus from the file
+  * sed -i 's/coronavirus//g' samplefile.txt - to remove the word coronavirus from the file.
+
+# Redirections Inputs and Outputs
+* Some useful commands before that
+  * **uptime** - the time your system has been up.
+  * **date** - the current time of your system
+  * **free -m** - the current ram available on the system or it can be said it shows the memory utilization.
+  * **df -h** this will show the harddisk partitions
+* The contents can be written in a files with redirection >, but every time we use >, it will overwrite the pervious content
+* The issue can be overcome by using >> for writing into the files.
+* ls > /tmp/sysinfo.txt, cat /tmp/sysinfo.txt, uptime >> /tmp/sysinfo.txt
 
 
 
