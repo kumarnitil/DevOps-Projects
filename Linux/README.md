@@ -103,6 +103,15 @@ troubleshooting.
 * The contents can be written in a files with redirection >, but every time we use >, it will overwrite the pervious content
 * The issue can be overcome by using >> for writing into the files.
 * ls > /tmp/sysinfo.txt, cat /tmp/sysinfo.txt, uptime >> /tmp/sysinfo.txt
+* **echo** is your print command whoes output can again be redirected to a file.
+* We have seen how we can redirect output to the screen or to the file but if you do not want to redirect to anywhere you can redirect to /dev/null which is like a black hole in the galaxy. **yum install vim -y > /dev/null**
+* /dev/null can also be used delete the contents of a file **cat /dev/null/ > /tmp/file.txt
+  * **Redirecting Errors into files**
+  * Use 1>> for redirecting standard output which is also present by default
+  * Use 2>> for redirecting standard error to the file.
+  * Use &>> for redirecting any kind of output to the file  - whether it is an output or an error.
+  * /var/log will have the log files of the processes which are running behind the scenes.
+  * **wc -l** this commands counts the line number in any file.
 
 
 
