@@ -113,6 +113,38 @@ troubleshooting.
   * /var/log will have the log files of the processes which are running behind the scenes.
   * **wc -l** this commands counts the line number in any file.
 
+# Piping of the commands
+* You can use pipe command in any way you please as long as it makes sense
+* **ls | wc -l** - This command can count the number of files in a directory.
+* **ls | grep host** this will display all the files which start will host in the directory.
+* **tail /var/log/messages | grep -i vagrant** - will look for all the last 10 lines having word vagrant in it.
+* **free -m | grep Mem** - will display only the output where we have the work Mem
+* **ls -l | tail** - last 10 files or directories
+* **ls -l | head** will display first 10 files or directories
+
+# find command
+* find /the path -name name of the file - **find /etc -name host.txt** the sample path
+* The other way of searching is also by using the **locate** command but locate may not be installed by default
+* **sudo yum install mlocate -y** will install the locate command and post this install you need to run **updatedb**
+* **locate** is not a real time search where as the find is - the locates searches its db which is updated thus it is important to run update db before running the locate command
+
+# Users and Groups
+* Every user has a unique ID associated with it which is called as the UID and it is stored in the which is stored in /etc/passwd file
+* User passwords are stored in **/etc/shadow** file in the encypted format and also expiry of the user
+* root user will have a user id and group id of 0 and shell as /bin/bash where as system user will not have a shell which means cannot be used to login.
+* **root:x:0:0:root:/root:/bin/bash** -  A line from the /etc/passwd file
+  * First coloumn - Name of the user
+  * 2nd - Link to the shadow file
+  * 3rd and 4th - UID and GID
+  * 4th - COmments
+  * 5th - Path to home directory
+  * 6th - login Shell
+* **/etc/group** will have group information.
+* **id** command - **id nitil** will give information about the user nitil
+* **last** command will give you a list of the users logged into the system.
+* **who** who is the current user
+* **lsof -u username** will give you the list of all the files which has been opened by the user.
+
 
 
 
