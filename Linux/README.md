@@ -172,6 +172,35 @@ troubleshooting.
   * **chmod g+w /opt/devopsdir** - giving write permission for the group.
   * Replace **(u/g/o)(+/-)(r/w/x)** with **(/0/1/2/4/5/6/7)(/0/1/2/4/5/6/7)(/0/1/2/4/5/6/7)** and use the same chmod command.
 
+# SUDO
+* **sudo -i** will change the user to superuser
+* For any user to execute commands as superuser it needs to be added to the **/etc/sudoers** file.
+* You can edit this file using **visudo**
+* Add the entry like this - **ansible ALL=(ALL)       NOPASSWD: ALL** which will not only add the user but also not ask for password when changing to ansible user.
+* But if there is a syntax error in editing the sudoers file then it will not save and use **e** to go back to editing mode.
+* Since that is prone to error you can go to **/etc/sudoers.d/** and create a file there with either the file name or the group name.
+
+# Package Management
+* Install any package on your Linux Server using rpm. The rpm packages needs to be downloaded and then installed using red hat package manager.
+* **curl** can be used to download any file to the linux machine.
+* **curl https://rpmfind.net/linux/centos/7.9.2009/os/x86_64/Packages/httpd-2.4.6-95.el7.centos.x86_64.rpm -o httpd-2.4.6-95.el7.centos.x86_64.rpm** Here the curl command will take the contents of the file and **-o** will redirect the output to the new file.
+* **rpm -ivh httpd-2.4.6-95.el7.centos.x86_64.rpm** will install package using the downloaded file.
+**-ivh**
+  * i is for install
+  * v is for verbose
+  * h is to print it in human readable format.
+* rpm will install the package for you but will not install the related dependencies
+* This can be resolved using the package manager which is **yum** which is there for Redhat.
+* **rpm --help** will show all the options to you.
+* **rpm -qa** will list all the rpms or packages.
+* **rpm -e** to erase any package.
+* **yum** is always a better option to manage the package since it will not only install the package but also install all the dependencies.
+  * yum maintains some files in the directory **/etc/yum.repos.d/**. These files points to repositories on the internet and will download and install the package for you.
+* **yum install package**
+* **yum upgrade** is going to read all your packages and then upgrade all of them to the latest version.
+* **yum remove** to remove a package.
+
+
 
 
 
