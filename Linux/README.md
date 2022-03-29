@@ -145,6 +145,34 @@ troubleshooting.
 * **who** who is the current user
 * **lsof -u username** will give you the list of all the files which has been opened by the user.
 
+# User and Groups Modification Commands
+* **useradd** command to add a user
+* **groupadd** command to add a group
+* **usermod** will modify the setting related to a user
+  * **groupadd devops** will create a group called devops
+  * **useradd ansible** will create a user called as aws - **Note** the primary group here will be aws
+  * **usermod -aG devops ansible** will add the user ansible to the secondary group devops since we used Capital **G**
+  **usermod -ag devops ansible** will add the user ansible to the primary group devops since we used small **g**
+  * We can also add a user to a group by simply modifying the file **/etc/group**
+* **passwd** will be used to create a password for the user
+* **userdel** will be used to delete a user but simply using **userdel ansible** will delete only the user and not the home directory.
+* **userdel -r ansible** will delete the user as well as the home directory.
+* **groupdel** will delete a particular group.
+
+# Files Permissions
+* **chown** to change the user of the file/directory - **chown nitil text.txt/dir1**
+* **chgrp** to change the group of the file or/directory - **chgrp nitil text.txt/dir1**
+* **chown/chgrp -R** will change recursively means it will change it for all the file/sub-directories inside the directory.
+* **chmod** will modify the permissions of the user/group/other users related to the file or diretory.
+* **The execute permission on the directory means you can cd to the directory**
+* **chmod format**
+  * chmod (u/g/o)(+/-)(r/w/x) filename/directory name.
+  * **chmod o-x /opt/devopsdir**
+  * **chmod o-r /opt/devopsdir** - removing the read permission for other users.
+  * **chmod g+w /opt/devopsdir** - giving write permission for the group.
+  * Replace **(u/g/o)(+/-)(r/w/x)** with **(/0/1/2/4/5/6/7)(/0/1/2/4/5/6/7)(/0/1/2/4/5/6/7)** and use the same chmod command.
+
+
 
 
 
