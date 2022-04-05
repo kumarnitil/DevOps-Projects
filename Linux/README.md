@@ -200,10 +200,37 @@ troubleshooting.
 * **yum upgrade** is going to read all your packages and then upgrade all of them to the latest version.
 * **yum remove** to remove a package.
 
+# Service Management
+* **systemctl status servicename** will show you the status of the service
+* **systemctl start servicename** will start the service
+* **systemctl restart servicename** will restart the service.
+* **systemctl reload servicename** will reload the changes in the configuration but not restart the service.
+* But once the server reboots it is not going to come up on its own hence we have to use **systemctl enable servicename**
+* **systemctl is-active servicename** will let you know whether the service is running or not.
+* **systemctl is-enabled servicename** will tell you whether the service is enabled for boot time or not.
+* The systemcl works on the basis of configuration file. Every service will have a configuration file created under systemcel - The sample path has been shown below. **cat /etc/systemd/system/multi-user.target.wants/httpd.service**
 
-
-
-
+# Processes
+* **top** is a command which gives information about the dynamic proceeses running
+  * Some of the information which we can see using top command are
+  * **Load Average**
+  * **PID** or process id and **user** running the process
+  * **running, sleeping and stopped**
+  * **zombie** process
+  * Use Q to quit out of **top** command
+* **ps aux** will display the similar information on the screen and then quits
+* **PID 1** is the first process which in the new Linux systems is **systemd** and in old Linux systems is **init** but in **ubuntu** it is still init.
+* systemd or init is the first process which is going to start so many other processes.
+* **ps aux** will also show you the system utilization.
+* **ps -ef** is also going to show you all the processes running but - 
+  * **but this is not going to show you the utilization but the parent process id also referred to as PPID**
+  * Some tricks of the ps -ef command - 
+  * ps -ef | grep httpd - this will not only show you the httpd processes running but will also show you a grep command which was executed in the result to find the httpd which can be ignored. Hence in order to not see the grep result as well use the following command below
+  **ps -ef | grep httpd | grep -v 'grep'**
+* **kill pid** will kill the process and all the child processes as well associated with the process.
+* **kill -9 Pid** to forcefully kill a command
+* **Trick when you have to kill multiple process then we can use the awk command and to get the second coloumn PID and then we can pass to kill command using the xargs command - **Check the command below**
+  * **ps -ef | grep httpd | grep -v 'grep' | awk '{print $2}' | xargs kill -9**
 
 
 
