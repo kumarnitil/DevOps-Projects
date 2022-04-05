@@ -231,6 +231,42 @@ troubleshooting.
 * **kill -9 Pid** to forcefully kill a command
 * **Trick when you have to kill multiple process then we can use the awk command and to get the second coloumn PID and then we can pass to kill command using the xargs command - **Check the command below**
   * **ps -ef | grep httpd | grep -v 'grep' | awk '{print $2}' | xargs kill -9**
+* **Zombie process are slight different than orphan processes** - find the difference here - ![alt text](https://www.geeksforgeeks.org/difference-between-zombie-orphan-and-daemon-processes/#:~:text=1.-,A%20Zombie%20is%20a%20process%20that%20has%20completed%20its%20task,execution%20is%20called%20an%20orphan.)
+* Orphan process consumes the resouces where as Zombie does not - the best way to clear the zombie process is to reboot your machine.
+* The status of zombie process shows a Z when we run the top command.
+
+# Archiving
+* **tar** command is used for archiving
+  * **tar -czvf http_06122020.tar.gz httpd**
+  * tar is the command to create the tar file
+  * c is for create
+  * z is for signifying it was compresses using gunzip
+  * v is for verbose
+  * f is for file
+  * **http_06122020.tar.gz** is the name of the tar file which will be created where .tar is denoting it is a tar ball and gz is denoting the folder name which it needs to compress
+  * **tar -xzvf http_06122020.tar.gz** command will help to extract the command where -x denotes xtractions
+  * **tar -xzvf http_06122020.tar.gz -C /tmp/** can be used when we have to extract the tar file to a different location.
+* **zip** and **unzip** command is another command which can be used for archiving and extraction.
+* zip will need to be installed
+* zip -r foldername for zipping
+* unzip filename for unzipping
+
+# Ubuntu Command - Commands which are different in ubuntu.
+* In ubuntu we use **adduser** instead of **useradd** which is used in centos
+* The default editor in ubuntu is nano
+* Thus we can run the command **export EDITOR=vim** to make vim as the default editor but once you log out this setting will be lost
+* **wget** or **curl** is used to download file to ubuntu systems
+* **dpkg -i packagename** is command in ubuntu used to install packages instead **rpm** which we used to install packages in centos
+* **dpkg -l** is the command to list all the debian packages
+* **dpkg -r** is used to remove any package.
+* **apt** is used instead of **yum** install in Ubuntu
+* **cat /etc/apt/sources.list** is the file which contains the details of all the repos on the internet from where apt will download the packages
+* **apt update** will update this source list
+* **apt upgrade** is different from **apt update** since it will upgrade all the packages already installed on the server
+* **apt remove** will remove a package but not the folders and configuration
+* **apt purge** will remove the package as well as configuration
+
+
 
 
 
