@@ -12,3 +12,8 @@ __Linux Cheat Sheet__
 - __hostname__ gives you the machine name of the machine you are in, __hostname -f__ will give you a slight more information.
 - __hostname -i__ will give you the internal IP Address of the machine you are in.
 - __last__ gives you the list of all the users logged in.
+
+# Basic Commands
+- __pwd__ Present Working Directory.
+- __cd -__ takes you to the last working directory you are in.
+- 
