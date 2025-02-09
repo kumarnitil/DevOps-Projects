@@ -1,0 +1,75 @@
+  195  git switch main
+  196  git remote set-url origin git@github.com:username/DevOps-Projects.git
+  197  git pull
+  198  git remote set-url origin git@github.com:kumarnitil/DevOps-Projects.git
+  199  git pull
+  200  git switch linux/
+  201  git switch Linux
+  202  clear
+  203  git push
+  204  cd linux/
+  205  ls
+  206  mkdir 02-02-2025
+  207  cd 02-02-2025/
+  208  sudo apt install ngnix
+  209  cd
+  210  sudo apt install ngnix
+  211  apt install ngnix
+  212  sudo apt remove ngnix
+  213  exit
+  214  sudo apt install ngnix
+  215  clear
+  216  sudo apt update
+  217  sudo apt install ngnix
+  218  sudo apt-get update
+  219  sudo apt install ngnix
+  220  sudo groupadd devops
+  221  sudo useradd -m -s /bin/bash nitilkumar
+  222  sudo passwd nitilkumar
+  223  sudo usermod -aG devops nitilkumar 
+  224  pwd
+  225  sudo chown ubuntu:devops /home/kumarnitilubuntu/webapp
+  226  sudo chown kumarnitilubuntu:devops /home/kumarnitilubuntu/webapp
+  227  ls
+  228  pwd
+  229  mkdir webapp
+  230  sudo chown kumarnitilubuntu:devops /home/kumarnitilubuntu/webapp
+  231  sudo chmod 750 webapp/
+  232  ls -l
+  233  su - nitilkumar 
+  234  ls -l
+  235  sudo chown nitilkumar:devops /home/kumarnitilubuntu/webapp
+  236  su - nitilkumar 
+  237  sudo chown nitilkumar:devops /home/kumarnitilubuntu/
+  238  su - nitilkumar 
+  239  sudo cat /etc/resolv.conf 
+  240  sudo cat /etc/nsswitch.conf 
+  241  ip
+  242  ip addr show
+  243  clear
+  244  ip link show
+  245  ping -c localhost
+  246  ping localhost
+  247  ping help
+  248  ping --help
+  249  ping -c 4 localhost
+  250  clear
+  251  systemctl status systemd-resolved
+  252  resolvectl status
+  253  ping -c 4 google.com
+  254  ping -c 4 www.google.com
+  255  ping -t 5 www.google.com
+  256  traceroute www.google.com
+  257  sudo apt install traceroute
+  258  traceroute www.google.com
+  259  netstat -tunlap
+  260  sudo apt install net-tools
+  261  netstat -tunlap
+  262  dig www.google.com
+  263  clear
+  264  history 100
+  265  history 70
+  266  ls
+  267  sudo chown kumarnitilubuntu:kumarnitilubuntu /home/kumarnitilubuntu/
+  268  ls
+  269  history 75 > ./DevOps-Projects/linux/02-02-2025.txt

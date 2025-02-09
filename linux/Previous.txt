@@ -1,0 +1,169 @@
+    1  ls
+    2  cd
+    3  ls
+    4  ls -l
+    5  ls -la
+    6  exit
+    7  gitr
+    8  git
+    9  clear
+   10  git clone https://github.com/kumarnitil/DevOps-Projects.git
+   11  ls
+   12  cd DevOps-Projects/
+   13  ls
+   14  cd
+   15  touch file.txt
+   16  ls lrt
+   17  ls -lrt
+   18  mkdir trail
+   19  mv file.txt ./trail/
+   20  ls
+   21  cd trail/
+   22  LS
+   23  ls
+   24  ls -lrt
+   25  chmod 777 file.txt 
+   26  ls -lrt
+   27  chmod 770 file.txt 
+   28  ls -lrt
+   29  chmod 400 file.txt 
+   30  ls -lrt
+   31  history 
+   32  touch ../DevOps-Projects/23-01-2025.txt
+   33  history >> ../DevOps-Projects/23-01-2025.txt 
+   34  cd ../DevOps-Projects/
+   35  ls
+   36  git add .
+   37  git commit -m "first commit"
+   38  git config --global user.email "kumarnitil@gmail.com"
+   39  git config --global user.name "Kumar Nitil"
+   40  git commit -m "first commit"
+   41  git push
+   42  git remote -v
+   43  git remote set-url origin [email protected]:kumarnitil/DevOps-Projects.git
+   44  git remote set-url origin [kumarnitil@gmail.com protected]:kumarnitil/DevOps-Projects.git
+   45  git remote set-url origin [email protected]:https://github.com/kumarnitil/DevOps-Projects.git
+   46  clear
+   47  git config --global --unset kumarnitil
+   48  git config --global --unset user.name
+   49  git config --global user.name "kumarnitil"
+   50  git config --global user.name "kumarnitil@gmail.com"
+   51  git push
+   52  cd
+   53  cd trail/'
+   54  cd trail/
+   55  clear
+   56  ls
+   57  ls -lrt
+   58  chmod u+wx,g+r,o+r file.txt 
+   59  ls -lrt
+   60  chmod u-x.g-x,o-x file.txt 
+   61  chmod u-x,g-x,o-x file.txt 
+   62  lr -ls
+   63  ls -lrt
+   64  touch file1.txt
+   65  ls -lrt
+   66  chmod +x file1.txt 
+   67  ls -lrt
+   68  chmod -x file1.txt 
+   69  ls -lrt
+   70  clear
+   71  sudo useradd testuser
+   72  sudo passwd testuser 
+   73  sudo groupadd testgroup
+   74  sudo usermod -aG testgroup testuser 
+   75  ls -lrt
+   76  sudo chown testuser:testgroup file1.txt
+   77  ls -lrt
+   78  sudo chwon -R testuser:testgroup ../trail/
+   79  sudo chown -R testuser:testgroup ../trail/
+   80  ls -lrt
+   81  touch file3.txt
+   82  clear
+   83  ls
+   84  cd trail/
+   85  vi ./no-hup-demo.sh
+   86  ls -l
+   87  cd ..
+   88  vi ./nohup-demo.sh
+   89  ls -l
+   90  chmod +x nohup-demo.sh 
+   91  ls -l
+   92  ./nohup-demo.sh 
+   93  bg
+   94  ng 1
+   95  ./nohup-demo.sh
+   96  bg 1
+   97  jobs
+   98  ps -ef | grep nohup
+   99  exit
+  100  clear
+  101  jobs
+  102  ps -ef | grep nohup
+  103  ./nohup-demo.sh
+  104  ps -ef | grep nohup
+  105  ./nohup-demo.sh
+  106  ps -ef | grep nohup
+  107  nohup ./nohup-demo.sh 
+  108  ps -ef | grep nohup
+  109  exit
+  110  ps -ef | grep nohup
+  111  nohup ./nohup-demo.sh &
+  112  ps -ef | grep nohup
+  113  jobs
+  114  exit
+  115  ps -ef | grep nohup
+  116  cd /var/log; ls
+  117  cd /var/log && ls
+  118  cd /var/log && ls > listing.txt
+  119  ls 
+  120  ls
+  121  mkdir hypha
+  122  ls
+  123  cd hypha/
+  124  cd
+  125  cd .ssh/
+  126  ls
+  127  cat authorized_keys 
+  128  cd
+  129  ls
+  130  cd hypha/
+  131  ssh-keygen -t rsa
+  132  ls
+  133  cd .ssh/
+  134  cd
+  135  cd .ssh/
+  136  ls
+  137  ls -lrt
+  138  pwd
+  139  ssh-copy-id -i /home/kumarnitilubuntu/.ssh/id_rsa.pub kumarnitilubuntu@192.168.1.44
+  140  exit
+  141  ls
+  142  cd DevOps-Projects/
+  143  ls
+  144  git checkout Linux 
+  145  git branch
+  146  git checkout Linux 
+  147  git checkout -- Linux 
+  148  git branch
+  149  git checkout --Linix
+  150  clear
+  151  git checkout Linux
+  152  git checkout --Linux
+  153  git checkout --guess Linux 
+  154  git checkout --no-guess Linux 
+  155  git branch
+  156  git switch Linux 
+  157  git branch
+  158  git pull
+  159  mv Linux/ ./linux
+  160  ls
+  161  git add .
+  162  git commit -m "1st-Feb"
+  163  git push
+  164  git branch
+  165  ls
+  166  cd linux/
+  167  ls
+  168  clear
+  169  history > Previous.txt
