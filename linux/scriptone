@@ -1,0 +1,7 @@
+#!/bin/bash
+echo hello all
+name="Kumar Nitil here"
+echo $name
+greet="The age of"
+age=37
+echo "$greet $name is $age"
