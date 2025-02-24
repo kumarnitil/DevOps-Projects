@@ -26,6 +26,6 @@
 
 #gawk can also be used to modify the commands on the fly
 
-# echo "My name is Kumar character" | gawk '{$4=Nitil; print $0}'
+# echo "My name is Kumar character" | gawk '{$5=Nitil; print $0}'
 
 
