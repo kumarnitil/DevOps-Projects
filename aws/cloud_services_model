@@ -1,0 +1,15 @@
+Cloud Services Models : IAAS, PAAS, SAAS
+
+IAAS: Infrastructure as a Service. Renting Servers, where you have control over the OS, Storage, Security, Applications. You need to understand this is just the hardware services.
+PAAS: Platform as a Service. Offers not only hardware and storage, but also the development tools and platforms needed to build and deploy the apps.
+SAAS: Delivers the Software Apps over the internet 
+
+Type of Cloud 
+Private, Public and Hybrid
+
+Private Cloud: Infra is dedicated to a single organisation. The ability should still be there for compute, storage and network.
+Public Cloud: Shared Platform which was available to the public on demand basis.
+Hybrid Cloud: Combine Public and Private Cloud. Sometimes the organisation needs to combine public and private cloud. If there are some sensitive information to be stored then the organisationw will be going to private cloud.
+Multi Cloud: AWS, Azure and GCP. Many organisation will have multiple cloud providers depending upon their need.
+
+
