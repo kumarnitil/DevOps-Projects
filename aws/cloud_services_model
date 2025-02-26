@@ -12,4 +12,29 @@ Public Cloud: Shared Platform which was available to the public on demand basis.
 Hybrid Cloud: Combine Public and Private Cloud. Sometimes the organisation needs to combine public and private cloud. If there are some sensitive information to be stored then the organisationw will be going to private cloud.
 Multi Cloud: AWS, Azure and GCP. Many organisation will have multiple cloud providers depending upon their need.
 
+The Evolution of Cloud Computing:
+
+Evolution of the computers over the years:
+1950s: Mainframe Computers aka dumb terminals... HP Tandem ()
+1970s: VMs, Flexibility, Ability to run multiple OS on a single machine.
+1990s: Shared infrastructure.
+2000s: Enterprise Application Services (Salesforce) and Amazon Datacentres
+2004 - 2006: AWS Launched, GCP, Azure
+
+The Backbone of the Cloud infrastructure infra is:
+Virtualization, Elasticity and Scalability
+
+Virtualization: Key tech behind the Cloud computing is virtualization. 
+Class 1 - Baremetal
+Class 2 - Hosted
+
+Elasticity vs Scalability
+
+Scalability can be called as the ability to add resources on demand.
+There are two types Scalability - Horizontal and Vertical
+Horizontal scalability (Scale Out) is the ability to add more servers to handle traffic/load.
+Vertical Scalability (Scale up) - ABility to upgrade existing servers with more cpu or memory
+
+Elasticity(Scaling up or down) - 
+Automatic ability to scale resources up or down as per demand.
 
