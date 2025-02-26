@@ -1,0 +1,32 @@
+AWS has something called as 
+Shared Security Responsibility Model
+The secuirty responsibility is shared both between Users and AWS
+AWS Responsibilities(Security of the cloud and the infra)
+Managed Services
+
+AWS has some built in security services like cloudwatch
+
+Data Handling:
+
+AWS performs something called as Internal Data Wipe.
+
+Compliance:
+
+The compliance standards for various regions needs to be followed.
+
+Customer responsibilities
+Configuration and Management
+Security and Automation
+
+AWS Soft Limit - Imposes something called as a region based soft limits which can simply mean the number of resources which you can spin on each server based on the regions
+
+Disaster Recovery with AWS - A well planned DR strategy should be there
+A: Key DR Metrics
+RTO: Recovery time objectives: Maximum acceptable downtime after disaster
+
+RPO - Recovery Point Objectivce - Maximum Acceptable amount of Dataloss you can bear
+
+There are various types of DR Model available on AWS.
+- Backup and restore - Periodic backups
+- Pilot Lite - Always on-going
+ 
