@@ -29,4 +29,38 @@ RPO - Recovery Point Objectivce - Maximum Acceptable amount of Dataloss you can 
 There are various types of DR Model available on AWS.
 - Backup and restore - Periodic backups
 - Pilot Lite - Always on-going
- 
+
+
+Internet Gateway
+
+NAT Gateway:
+
+Instances sitting on your subnet when they need to send outbound traffic.
+NAT Gateway supports 10 GB of internet bandwidth
+
+Allows instances in private subnet to initiate outbound traffic to the internet without exposing the the private IP Addess. it is managed by AWS, high bandwidth(busrtabl upto 10 gb, HA with multi AZ support)
+NAT Instances
+Self Managed EC2 instances configured to perform NAT.
+Requires manual diasbing of Source/destination checks.
+Bandwidth is limited by instance type.
+
+
+Routing:
+Private Subnets will have the route(0.0.0.0/0) point to NAT Device.
+
+DHCP 
+(Dynamic Host Configuration Protocol) Option sets:
+Automatically assign IP addresses and Provide Config settings to instance in a VPC.
+
+VPC Peering - Method to connect two VPCs(be it on same account, cross account, cross region)
+
+key steps:
+1. The owner of VPC1 initiate a peering reqiest with VPC2.
+2. Both VPC's must have non-overlappting CIDR Blocks.
+3. Update the ROute Tables.
+
+VPC Endpoints
+Provides a private communication b/w your VPC and AWS Services >
+
+
+
