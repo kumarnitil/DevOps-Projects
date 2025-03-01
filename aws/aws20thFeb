@@ -1,0 +1,25 @@
+Introduction to Computer Networking
+
+ Sharing the resource, communication, data transfers between two or more computers
+
+# Usage Requirement in an organisation
+- Restriced Access - Access within organisation netwoek, VPN and all
+- Open Access - Should be accessible to internal or external
+
+Network Segementation is done on the basis of usage requirements, whether restriced access or open access. That is where we will bes using something called as Subnets.
+
+Subnets: Network is divided into multiple logical segements.
+We will be dividing our network into small segements.
+And to divide the network into small segements we need subnets.
+We will use Private Subnets for restriced access.
+We will use Public Subnets for Open Access.
+
+How all this related to computer networking can be achieved in AWS
+
+We have a service in AWS
+
+Service in AWS : VPC ( Virtual Private Cloud) : VPC : which is Virtual Datacentre on the Public Cloud.
+VPC gives the flexibility to created your own data centre in the public cloud.
+
+AWS VPC - Will give you the ability to create a logically isolated sections in AWS.
+
