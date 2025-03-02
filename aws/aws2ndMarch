@@ -1,0 +1,57 @@
+every VPC will need to have to be separately connected to the VPCs
+
+A = B = C does not mean A can tall to C
+ 
+Transit Gateway
+Fully Managed AWS Service
+Central hub
+
+1.> Centralized Connectivity
+2.> Simplied Architechture
+3.> Cost Efficientcy and Scalability
+
+
+Core Components of Transit Gateway
+
+It is based on Hub and Spoke Model
+Transit gateway acts as HUB
+Attachments are Sppkes: Examples can be vps's, on-prem network(via VPN, Direct Connects)
+
+Key Components:
+
+TGA: Transit Gateway Attachments
+Transit Gateway Route tables
+Routing Decisions
+Route Preparations
+Inter Region Peering:
+
+Limitation and Service Quotas
+
+Attachment Limits: but can be increaded with AWS Support.
+Route Table size: 5000 routes per TG Route table.
+Inter region Peering: up to 50 inter-region peering connections with a single Transit gateway
+Processing Overhead: Huge traffic flow might impact performance.
+
+ASN: (Autonomous system number)
+
+Pre-Propogated Routes
+
+No-builtin Routes
+
+
+Best Practices
+1. Design with Limits in mind
+2. Plan your ASN strategies
+3. Monitor and Audit
+
+VPCA
+Route Tables
+
+VPCB
+Route Tables
+
+VPCs :
+
+Route Tables
+
+Transit Gateway
