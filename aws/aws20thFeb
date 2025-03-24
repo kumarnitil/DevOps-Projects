@@ -23,3 +23,11 @@ VPC gives the flexibility to created your own data centre in the public cloud.
 
 AWS VPC - Will give you the ability to create a logically isolated sections in AWS.
 
+#VPC Creation steps
+- Search VPC top bar - Create VPC - 
+- Don't go for (VPC and more) option as it will already have the default option
+- Select the VPC only option 
+- VPC Name - shredded_coder
+- Define the IPV4 CIDR Range
+- 
+
