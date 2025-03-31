@@ -29,5 +29,5 @@ AWS VPC - Will give you the ability to create a logically isolated sections in A
 - Select the VPC only option 
 - VPC Name - shredded_coder
 - Define the IPV4 CIDR Range
-- 
+- Enter the key as project
 
