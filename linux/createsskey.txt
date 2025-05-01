@@ -1,0 +1,23 @@
+Check for the existing Key if any ls ~/.ssh/id_rsa*
+If this returns a file which are called id_rsa and id_rsa.pub
+
+----------------------------------------------------------------------
+
+The id_rsa.pub file is the public key component of an RSA key pair used in SSH (Secure Shell) for secure remote logins. It contains the public key that can be shared with other systems to allow passwordless SSH access. For example, if you have an account on machine B and you want to log in from machine A without entering a password, you can copy the contents of your id_rsa.pub file from machine A to the ~/.ssh/authorized_keys file on machine B.
+
+The id_rsa file, on the other hand, is the corresponding private key that should be kept secret and secure. It is used to authenticate the user when connecting to a remote server that has the public key (id_rsa.pub) stored in its authorized_keys file.
+
+When setting up SSH keys, the id_rsa.pub file is typically shared with the server administrator or added to the server's authorized keys to enable secure, passwordless logins.
+
+The id_rsa will contain the private key
+The id_rsa.pub will contain the public key
+
+If you don't have an SSH key pair, generate one using the ssh-keygen command.
+
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+Enter File Location and Passphrase (Optional): When prompted, choose the location to save the SSH key pair and optionally set a passphrase for added security.
+
+Copy Public Key to Remote Server: After generating the SSH key pair, copy the public key to the remote server's ~/.ssh/authorized_keys file.
+
+ssh-copy-id username@hostname_or_ip_address
