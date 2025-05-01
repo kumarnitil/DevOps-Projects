@@ -1,0 +1,2 @@
+ln -s /path/to/file link_name
+ln -s is used to create the symbolic link to the file, which are shortcuts or references to another file or directory.
