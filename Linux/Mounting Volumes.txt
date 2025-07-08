@@ -1,0 +1,16 @@
+
+Hyphothetical example
+Mounted Drive is xvdd
+File type ext4
+
+We need to first copy the fstab file
+- sudo cp /etc/fstab /etc/fstab.bak
+- Edit the file - sudo vim /etc/fstab
+- Add the details of the new mount
+#
+UUID=8ccb215f-5a99-42c1-8ecd-1a3ec537135b     /           xfs    defaults,noatime  1   1
+UUID=5A01-AD97        /boot/efi       vfat    defaults,noatime,uid=0,gid=0,umask=0077,shortname=winnt,x-systemd.automount 0 2
+/dev/xvdd             /newvolume1     ext4    defaults,nofail      0     0
+- save and close the file
+- run the command
+sudo mount -a

@@ -1,0 +1,4 @@
+2025-04-05 42 - INFO: System status OK
+2025-04-06 37 - WARNING: Low memory
+Some random text without a match
+2025-04-07 99 - DEBUG: All systems nominal
