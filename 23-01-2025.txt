@@ -1,0 +1,33 @@
+    1  ls
+    2  cd
+    3  ls
+    4  ls -l
+    5  ls -la
+    6  exit
+    7  gitr
+    8  git
+    9  clear
+   10  git clone https://github.com/kumarnitil/DevOps-Projects.git
+   11  ls
+   12  cd DevOps-Projects/
+   13  ls
+   14  cd
+   15  touch file.txt
+   16  ls lrt
+   17  ls -lrt
+   18  mkdir trail
+   19  mv file.txt ./trail/
+   20  ls
+   21  cd trail/
+   22  LS
+   23  ls
+   24  ls -lrt
+   25  chmod 777 file.txt 
+   26  ls -lrt
+   27  chmod 770 file.txt 
+   28  ls -lrt
+   29  chmod 400 file.txt 
+   30  ls -lrt
+   31  history 
+   32  touch ../DevOps-Projects/23-01-2025.txt
+   33  history >> ../DevOps-Projects/23-01-2025.txt 

@@ -21,3 +21,33 @@
 * Whatever commands you are running make sure you are in the right directory
 * vagrant reload to reboot the vm
 * vagrant destroy to delete the vm
+* ssh kumarnitil@192.168.1.43
+* ssh kumarnitil@192.168.1.43
+* ssh kumarnitilubuntu@192.168.1.44
+* pwd
+* mkdir /d/vagrant-vms
+* cd /d/vagrant-vms/
+* ls
+* mkdir centos
+* mkdir ubuntu
+* ls
+* cd centos/
+* vagrant init eurolinux-vagrant/centos-stream-9
+* Cat Vagrantfile
+* vagrant up
+* vagrant ssh
+* vagrant box list
+* vagrant status
+* vagrant halt
+* vagrant status
+* vagrant up
+* vagrant reload
+* vagrant destroy
+* vagrant up
+* vagrant destroy
+* vagrant init ubuntu/jammy64
+* vagrant up
+* vagrant halt
+* vagrant global-status
+* history
+
