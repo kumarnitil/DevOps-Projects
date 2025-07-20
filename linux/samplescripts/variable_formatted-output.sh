@@ -37,4 +37,4 @@ echo "${my_assoc_array[name]}" # Output: John
 declare -r daughter="TUKKU"
 # daughter="TUKKUU" - Will through a read only error"
 echo $daughter
-# https://www.google.com/search?udm=50&aep=11&q=top+-bn&mtid=SJZ7aIOELcWTseMP76_WmQE&mstk=AUtExfDx4u-atbb9dmBMXSBpbIHENYjJlOJaXBKFjwUiZk4Pr2kT-Y2wE9Bzj6d02nMuza7lEpU5WfImHoDKTqrYZwbRV0gsQmq-El4XDGFtK_PjFmKQw0_-Ibsv3BJSFz3IQhV0jPfMVKANt5jeZlv9O33vsJRlY8iczslCesdXQzYrfvnhrwU86IuOvaqq25qZWYm-CPusJFRn-Gp--Basy05WLCVqYykoOyYmKktPPnIcYy-6DmyILigjTWhF85Dx_BA7llpCBzAABwSl4_Jhf-743fcK4L99fXE1fgCWhoj7_sZyifjeU547sDBzBDdmOG8fSv6dewCvuw&csuir=1
+: ' https://www.google.com/search?udm=50&aep=11&q=top+-bn&mtid=SJZ7aIOELcWTseMP76_WmQE&mstk=AUtExfDx4u-atbb9dmBMXSBpbIHENYjJlOJaXBKFjwUiZk4Pr2kT-Y2wE9Bzj6d02nMuza7lEpU5WfImHoDKTqrYZwbRV0gsQmq-El4XDGFtK_PjFmKQw0_-Ibsv3BJSFz3IQhV0jPfMVKANt5jeZlv9O33vsJRlY8iczslCesdXQzYrfvnhrwU86IuOvaqq25qZWYm-CPusJFRn-Gp--Basy05WLCVqYykoOyYmKktPPnIcYy-6DmyILigjTWhF85Dx_BA7llpCBzAABwSl4_Jhf-743fcK4L99fXE1fgCWhoj7_sZyifjeU547sDBzBDdmOG8fSv6dewCvuw&csuir=1'
