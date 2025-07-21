@@ -13,5 +13,5 @@ double_value() {
 }
 echo "Enter the value you want to double"
 result=$(double_value)
-
+# Here we use a varibale instead to receive the returned value instead of $? so that it can hold a value greater than 255.
 echo "The new value is : $result"
