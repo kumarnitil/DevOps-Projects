@@ -4,7 +4,7 @@
   3. The input should time out after 10 seconds if no input has been given.
   4. Informs the user that it can enter a maximum of 5 Characters
 '
-
+# revised
 
 read -t 10 -n 5 -p "Enter the username with max 5 characters and before 10 seconds: " name
 
