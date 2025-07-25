@@ -14,7 +14,7 @@ handle_error() {
 {
 	echo "Attempting to run command1"
 	# date # Using the actual command
-	date? # Use this command when you want to capture actual command
+	date # Use this command when you want to capture actual command
 } || {
 	# Handles the error when command fails to execute
         handle_error "Commands fails to execute"
