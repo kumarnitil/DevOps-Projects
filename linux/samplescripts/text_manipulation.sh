@@ -1,4 +1,5 @@
 #!/bin/bash
+# This has been completed
 read -p "Enter your name :" name
 echo "Hello Mr. $name"
 echo "Hello Mr. ${name:0:5}" # Will print only first five characters

@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# HOME, PATH, USER and SHELL are some important environment variables.
 echo "The environment variable PATH is $PATH"
 echo "The environment variable HOME is $HOME"
 echo "The environment variable USER is $USER"
