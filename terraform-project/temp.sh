@@ -1,4 +1,15 @@
 #!/bin/bash
-mkdir modules
-cd modules/
-touch ec2.tf iam.tf s3.tf security-groups.tf variables.tf
+mkdir environments
+cd environments/
+mkdir dev
+cd dev/
+touch main.tf
+touch variables.tf
+touch terraform.tfvars
+cd ..
+mkdir prod
+cp ./dev/* ./prod
+ls -la prod/
+mkdir release
+cp ./dev/* ./release/
+ls -la release/
