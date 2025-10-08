@@ -27,5 +27,29 @@ else
 	echo "---- Starting the log entry ----" > "$FILENAME"
 fi
 
+# In Bash scripting -r option is used with read command and it means "Raw Input without backslashes"
+# read -r LINE - this piece of code reas one line from standard input into the variable without interpreting the backslahesh.
+# In Bash Scripting, the '<' symbol is called input redirection. It tells the shell to take input from a file or stream instead of standard input
+# The < file.txt will feed the file's contents into the while loop. Each iteration reads one line into LINE. Without < file.txt the script will wait for manual input.
+
+echo "Add an additional line to the notes file" >> "$FILENAME"
+echo "File has been updated with an additional line"
+
+# ---- Read the contents of the file Line by Line ----
+echo "" # Print a blank line for spacing.
+
+echo "Reading contents from the file $FILENAME"
+
+LINE_NUMBER=1
+while read -r LINE; do
+	echo "Line_number:$LINE_NUMBER: $LINE"
+	((LINE_NUMBER++))
+done < "$FILENAME"
+echo "---- End of file ----"
+
+echo ""
+
+echo "Script has been completed"
+
 
 
