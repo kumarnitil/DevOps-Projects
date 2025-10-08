@@ -1,0 +1,2 @@
+---- Starting the log entry ----
+Add an additional line to the notes file
