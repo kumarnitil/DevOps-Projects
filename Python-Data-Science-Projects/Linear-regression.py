@@ -33,13 +33,24 @@ data["Predicted_Salary"] = model.predict(X)
 # For the years of experience provided in X, the model predicts the corresponding salaries.
 # The predicted values are then added to the original DataFrame as a new column called 'Predicted_Salary'.
 
-plt.scatter(data['YearsExperience'], data['Salary'], color='blue', label='Actual Salary')
+plt.scatter( X, Y, color='blue', label='Actual Salary')
 # We use the scatter function from matplotlib to create a scatter plot of the actual data points.
-plt.plot(data['YearsExperience'], data['Predicted_Salary'], color='red', label='Predicted Salary')
+# The actual salaries are represented as blue dots.
+plt.plot( X, data['Predicted_Salary'], color='red', label='Predicted Salary')
+# The predicted salaries are represented as a red line.
+# The plot function connects the predicted salary points to form a line.
+# We add labels and a title to the plot for better understanding.
+
 plt.xlabel('YearsExperience')
+# We set the label for the x-axis as 'YearsExperience'.
 plt.ylabel('Salary')
+# We set the label for the y-axis as 'Salary'.
 plt.title('Years of Experience vs Salary')
+# We set the title of the plot as 'Years of Experience vs Salary'.
 plt.legend()
+# We add a legend to the plot to differentiate between actual and predicted salaries.
 plt.grid(True)
+# We add a grid to the plot for better readability.
 plt.show()
+# Finally, we display the plot using plt.show().
 # We use the plot function from matplotlib to create a line plot of the predicted salaries.
