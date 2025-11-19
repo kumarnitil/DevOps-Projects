@@ -30,3 +30,42 @@ model.fit(X, Y)
 
 # Adding Salary Predictor title
 st.title("Salary Predictor based on Years of Experience")
+st.write("Enter your years of experience to predict your salary.")
+
+years_input = st.number_input(
+    "Years of Experience", min_value=0.0, max_value=50.0, step=0.1)
+
+# years_input will take the user input for years of experience.
+# It uses Streamlit's number_input widget to create a numeric input field.
+# Based on the numeric input provided by the user, it will predict the salary using the trained model.
+
+
+if years_input:
+    print("User Input Years of Experience:", years_input)
+    predicted_salary = model.predict([[years_input]])[0]
+    st.success(f"Estimated Salary: {predicted_salary}")
+
+# predicted_salary will store the predicted salary based on the user input which is stored in years_input.
+# The model's predict method is used to make predictions based on the input data.
+# years_input is wrapped in a list to match the expected input format for the predict method.
+# The predicted salary is then displayed using Streamlit's success method.
+# The years_input[0] is used to extract the predicted salary value from the returned array.
+# predicted_salary is an array containing the predicted salary value.
+
+st.subheader("Salary Prediction Visualization")
+# subheader is for the visualization section of the app.
+
+fig, ax = plt.subplots()
+# fig and ax are created using plt.subplots() to create a figure and axis for the plot.
+
+ax.scatter(X, Y, color='blue', label='Actual Salary')
+ax.plot(X, model.predict(X), color='red', label='Predicted Salary')
+ax.set_xlabel('YearsExperience')
+ax.set_ylabel('Salary')
+ax.set_title('Years of Experience vs Salary')
+ax.legend()
+
+st.pyplot(fig)
+# Finally, we display the plot using st.pyplot().
+# We use the plot function from matplotlib to create a line plot of the predicted salaries.
+# The plot is then rendered in the Streamlit app using st.pyplot().
