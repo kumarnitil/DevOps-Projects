@@ -7,7 +7,8 @@ np.random.seed(40)
 years = np.random.uniform(0.5, 10, 100).round(2)
 # uniform generates data between the given range and how many data points we want and rounds it to 2 decimal places.
 
-salaries = (40000 + years * 6000 + np.random.normal(0, 4000, size=100) ).round(2)
+salaries = (40000 + years * 6000 +
+            np.random.normal(0, 4000, size=100)).round(2)
 # formula to generate salaries based on years of experience and round to 2 decimal places.
 
 # With the help of pandas, we can create a DataFrame to hold this data.
@@ -22,4 +23,3 @@ df.to_csv('salary_data.csv', index=False)
 print("Dataset created and saved as 'salary_data.csv'")
 # We create a DataFrame with two columns: 'YearsExperience' and 'Salary', using the generated data.
 # Finally, we save the DataFrame to a CSV file named 'salary_data.csv' without including the index column.
-
