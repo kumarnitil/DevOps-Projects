@@ -10,6 +10,7 @@ The goal is to generate synthetic data, perform exploratory data analysis (EDA),
 * How NumPy and Pandas can be used for data manipulation
 * Using Streamlit is an open-source Python framework used to build interactive, data-driven web applications quickly and easily—without needing any web development skills (like HTML, CSS, or JavaScript).
 * Using matplotlib is a plotting library for the Python programming language and its numerical mathematics extension NumPy.
+* The Pipeline class from sklearn is used to chain multiple data processing steps and a final estimator into one sequential workflow.
 
 📁 Features
 
