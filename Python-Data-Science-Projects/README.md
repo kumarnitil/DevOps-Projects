@@ -4,15 +4,11 @@
 This project demonstrates a simple yet complete data science workflow using Python.
 The goal is to generate synthetic data, perform exploratory data analysis (EDA), and build a basic prediction model using NumPy and Pandas—without relying on external machine learning libraries.
 
-It is ideal for beginners who want to understand:
-
-How datasets can be created programmatically
-
-How to clean, preprocess, and explore data
-
-How to build simple prediction logic from scratch
-
-How NumPy and Pandas can be used for data manipulation
+* We will see How datasets can be created programmatically using numpy.
+* How to clean, preprocess, and explore data
+* How to build simple prediction logic from scratch
+* How NumPy and Pandas can be used for data manipulation
+* Using Streamlit is an open-source Python framework used to build interactive, data-driven web applications quickly and easily—without needing any web development skills (like HTML, CSS, or JavaScript).
 
 📁 Features
 
