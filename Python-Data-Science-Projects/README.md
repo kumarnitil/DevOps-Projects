@@ -9,6 +9,7 @@ The goal is to generate synthetic data, perform exploratory data analysis (EDA),
 * How to build simple prediction logic from scratch
 * How NumPy and Pandas can be used for data manipulation
 * Using Streamlit is an open-source Python framework used to build interactive, data-driven web applications quickly and easily—without needing any web development skills (like HTML, CSS, or JavaScript).
+* Using matplotlib is a plotting library for the Python programming language and its numerical mathematics extension NumPy.
 
 📁 Features
 
